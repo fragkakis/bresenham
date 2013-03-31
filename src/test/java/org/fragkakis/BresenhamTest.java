@@ -20,6 +20,11 @@ public class BresenhamTest {
 		visualize(grid, line);
 	}
 
+	/**
+	 * Convenience method for visualisation.
+	 * @param grid the 2d array
+	 * @param line the line as a list
+	 */
 	private void visualize(Point[][] grid, List<Point> line) {
 
 		StringBuffer sb = new StringBuffer();
@@ -30,7 +35,6 @@ public class BresenhamTest {
         sb.append("\n");
 		
         // content
-        
         for(int y=0; y<grid[0].length; y++) {
 			
 			sb.append("+");

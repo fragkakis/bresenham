@@ -3,10 +3,25 @@ package org.fragkakis;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Implementation of the Bresenham line algorithm.
+ * @author fragkakis
+ *
+ */
 public class Bresenham {
-	public static List<Point> findLine(Point[][] grid, int x0, int y0, int x1, int y1) {
+	
+	/**
+	 * Returns the list of array elements that comprise the line. 
+	 * @param grid the 2d array
+	 * @param x0 the starting point x
+	 * @param y0 the starting point y
+	 * @param x1 the finishing point x
+	 * @param y1 the finishing point y
+	 * @return the line as a list of array elements
+	 */
+	public static <T> List<T> findLine(T[][] grid, int x0, int y0, int x1, int y1) {
 		
-		List<Point> line = new ArrayList<Point>();
+		List<T> line = new ArrayList<T>();
 		
 		int dx = Math.abs(x1 - x0);
 		int dy = Math.abs(y1 - y0);
